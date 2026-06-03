@@ -1,0 +1,5 @@
+/* Simple styles for register */
+.auth-page { max-width: 420px; margin: 40px auto; }
+.auth-form { display: flex; flex-direction: column; gap: 8px; }
+.error { color: #b00020; font-size: 0.9rem; }
+.btn-primary { padding: 8px 12px; }

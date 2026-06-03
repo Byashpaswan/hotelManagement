@@ -1,0 +1,46 @@
+.login-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+      padding: 1rem;
+    }
+    .login-card {
+      background: #1e293b;
+      border: 1px solid #334155;
+      border-radius: 16px;
+      padding: 2.5rem;
+      width: 100%;
+      max-width: 420px;
+      box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+    }
+    .login-header { text-align: center; margin-bottom: 2rem; }
+    .hotel-icon { font-size: 3rem; margin-bottom: 0.5rem; }
+    .login-header h1 { color: #f8fafc; font-size: 1.75rem; font-weight: 700; margin: 0 0 0.25rem; }
+    .login-header p { color: #94a3b8; margin: 0; }
+    .form-group { margin-bottom: 1.25rem; }
+    label { display: block; color: #cbd5e1; font-size: 0.875rem; font-weight: 500; margin-bottom: 0.5rem; }
+    input { width: 100%; padding: 0.75rem 1rem; background: #0f172a; border: 1px solid #334155;
+      border-radius: 8px; color: #f8fafc; font-size: 1rem; box-sizing: border-box; transition: border-color 0.2s; }
+    input:focus { outline: none; border-color: #3b82f6; }
+    input.is-invalid { border-color: #ef4444; }
+    .input-with-icon { position: relative; }
+    .input-with-icon input { padding-right: 3rem; }
+    .toggle-pw { position: absolute; right: 0.75rem; top: 50%; transform: translateY(-50%);
+      background: none; border: none; cursor: pointer; font-size: 1rem; }
+    .error-msg { color: #ef4444; font-size: 0.75rem; margin-top: 0.25rem; display: block; }
+    .alert { padding: 0.75rem 1rem; border-radius: 8px; margin-bottom: 1rem; font-size: 0.875rem; }
+    .alert-error { background: rgba(239,68,68,0.15); border: 1px solid #ef4444; color: #fca5a5; }
+    .btn-login { width: 100%; padding: 0.875rem; background: #3b82f6; color: white;
+      border: none; border-radius: 8px; font-size: 1rem; font-weight: 600; cursor: pointer;
+      transition: background 0.2s; display: flex; align-items: center; justify-content: center; gap: 0.5rem; }
+    .btn-login:hover:not(:disabled) { background: #2563eb; }
+    .btn-login:disabled { opacity: 0.6; cursor: not-allowed; }
+    .spinner { width: 16px; height: 16px; border: 2px solid rgba(255,255,255,0.3);
+      border-top-color: white; border-radius: 50%; animation: spin 0.8s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .demo-creds { margin-top: 1.5rem; padding: 0.75rem; background: rgba(59,130,246,0.1);
+      border-radius: 8px; text-align: center; }
+    .demo-creds p { color: #94a3b8; font-size: 0.75rem; margin: 0 0 0.25rem; }
+    .demo-creds code { color: #60a5fa; font-size: 0.8rem; }

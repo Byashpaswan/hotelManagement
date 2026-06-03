@@ -1,0 +1,59 @@
+.page { padding: 1.5rem; color: #f8fafc; }
+    .page-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem; }
+    h1 { font-size: 1.75rem; font-weight: 700; margin: 0 0 0.25rem; }
+    .page-header p { color: #94a3b8; margin: 0; }
+    .filters { display: flex; gap: 0.75rem; margin-bottom: 1.25rem; flex-wrap: wrap; }
+    .filters input, .filters select { background: #1e293b; border: 1px solid #334155; color: #f8fafc;
+      padding: 0.5rem 0.75rem; border-radius: 8px; font-size: 0.875rem; }
+    .filters input { flex: 1; min-width: 200px; }
+    .table-wrapper { overflow-x: auto; }
+    .data-table { width: 100%; border-collapse: collapse; background: #1e293b;
+      border-radius: 12px; overflow: hidden; }
+    .data-table th { background: #0f172a; padding: 0.75rem 1rem; text-align: left;
+      font-size: 0.75rem; text-transform: uppercase; color: #64748b; }
+    .data-table td { padding: 0.875rem 1rem; border-bottom: 1px solid #334155; font-size: 0.875rem; }
+    tr.blacklisted td { opacity: 0.6; }
+    .guest-name { display: flex; align-items: center; gap: 0.75rem; }
+    .avatar { width: 36px; height: 36px; border-radius: 50%; background: #3b82f6;
+      display: flex; align-items: center; justify-content: center; font-weight: 700;
+      font-size: 0.875rem; flex-shrink: 0; }
+    .name { font-weight: 600; }
+    .nationality, .phone { font-size: 0.75rem; color: #64748b; }
+    .contact { display: flex; flex-direction: column; gap: 0.15rem; }
+    .vip-badge { font-size: 0.7rem; padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: 600; }
+    .vip-platinum { background: rgba(167,139,250,0.2); color: #a78bfa; }
+    .vip-gold { background: rgba(251,191,36,0.2); color: #fbbf24; }
+    .vip-silver { background: rgba(148,163,184,0.2); color: #94a3b8; }
+    .vip-none { background: #334155; color: #64748b; }
+    .status-badge { font-size: 0.7rem; padding: 0.2rem 0.6rem; border-radius: 999px; font-weight: 600; }
+    .status-active { background: rgba(52,211,153,0.2); color: #34d399; }
+    .status-blacklist { background: rgba(239,68,68,0.2); color: #ef4444; }
+    .actions { display: flex; gap: 0.4rem; }
+    .btn-sm { padding: 0.3rem 0.65rem; border-radius: 6px; font-size: 0.75rem;
+      font-weight: 500; cursor: pointer; border: none; }
+    .btn-edit { background: #334155; color: #f8fafc; }
+    .btn-danger { background: rgba(239,68,68,0.2); color: #ef4444; }
+    .empty { text-align: center; color: #64748b; padding: 2rem; }
+    .loading { color: #64748b; padding: 2rem; text-align: center; }
+    .btn-primary { background: #3b82f6; color: white; border: none; padding: 0.6rem 1.25rem;
+      border-radius: 8px; font-weight: 600; cursor: pointer; }
+    .btn-secondary { background: #334155; color: #f8fafc; border: none; padding: 0.6rem 1.25rem;
+      border-radius: 8px; font-weight: 500; cursor: pointer; }
+    .modal-overlay { position: fixed; inset: 0; background: rgba(0,0,0,0.7);
+      display: flex; align-items: center; justify-content: center; z-index: 1000; padding: 1rem; }
+    .modal { background: #1e293b; border: 1px solid #334155; border-radius: 16px;
+      width: 100%; max-width: 540px; }
+    .modal-header { display: flex; justify-content: space-between; align-items: center;
+      padding: 1.25rem 1.5rem; border-bottom: 1px solid #334155; }
+    .modal-header h2 { font-size: 1.1rem; font-weight: 600; margin: 0; }
+    .modal-header button { background: none; border: none; color: #94a3b8;
+      font-size: 1.1rem; cursor: pointer; }
+    .modal-form { padding: 1.5rem; display: flex; flex-direction: column; gap: 1rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
+    label { font-size: 0.8rem; color: #94a3b8; font-weight: 500; }
+    input, select { background: #0f172a; border: 1px solid #334155; color: #f8fafc;
+      padding: 0.6rem 0.75rem; border-radius: 8px; font-size: 0.875rem; width: 100%; box-sizing: border-box; }
+    .alert-error { background: rgba(239,68,68,0.15); border: 1px solid #ef4444;
+      color: #fca5a5; padding: 0.6rem; border-radius: 8px; font-size: 0.875rem; }
+    .modal-actions { display: flex; gap: 0.75rem; justify-content: flex-end; }

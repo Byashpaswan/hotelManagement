@@ -1,0 +1,191 @@
+<div class="booking-page">
+  <header class="booking-header">
+    <div>
+      <h2>Book a Room</h2>
+      <p class="subtitle">Search, select, and reserve your perfect room with ease.</p>
+    </div>
+  </header>
+
+  @if (error()) {
+    <div class="alert alert-error">{{ error() }}</div>
+  }
+
+  <!-- STEP 1: Search -->
+  @if (step() === 'search') {
+    <section class="search-card card">
+      <h3>Search Available Rooms</h3>
+      <form [formGroup]="searchForm" (ngSubmit)="searchAvailable()" class="search-form">
+        <div class="row">
+          <div class="field">
+            <label>Check-in Date</label>
+            <input type="date" formControlName="checkIn" />
+          </div>
+          <div class="field">
+            <label>Check-out Date</label>
+            <input type="date" formControlName="checkOut" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label>Adults</label>
+            <input type="number" formControlName="adults" min="1" />
+          </div>
+          <div class="field">
+            <label>Children</label>
+            <input type="number" formControlName="children" min="0" />
+          </div>
+          <div class="field">
+            <label>Room Type (optional)</label>
+            <select formControlName="roomType">
+              <option value="">Any Type</option>
+              <option value="single">Single</option>
+              <option value="double">Double</option>
+              <option value="twin">Twin</option>
+              <option value="suite">Suite</option>
+              <option value="deluxe">Deluxe</option>
+              <option value="presidential">Presidential</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row actions">
+          <button type="submit" class="btn btn-primary" [disabled]="loading()">Search Rooms</button>
+        </div>
+      </form>
+    </section>
+  }
+
+  <!-- STEP 2: Select Room -->
+  @if (step() === 'select') {
+    <section class="select-card card">
+      <div class="card-header">
+        <h3>Available Rooms</h3>
+        <button type="button" (click)="goBack()" class="btn btn-secondary">Back</button>
+      </div>
+
+      @if (loading()) {
+        <div class="loading-state">Finding rooms...</div>
+      } @else if (availableRooms().length === 0) {
+        <div class="empty-state">No rooms available for your dates.</div>
+      } @else {
+        <div class="rooms-grid">
+          @for (room of availableRooms(); track room._id) {
+            <div class="room-card" (click)="selectRoom(room)">
+              <div class="room-badge">{{ room.type | uppercase }}</div>
+              <h4>Room {{ room.roomNumber }}</h4>
+              <p class="floor">Floor {{ room.floor }}</p>
+              <div class="amenities">
+                @if (room.amenities.length) {
+                  @for (a of room.amenities; track a.name) {
+                    <span class="amenity-tag">{{ a.name }}</span>
+                  }
+                }
+              </div>
+              <div class="capacity">
+                <span>👥 {{ room.capacity.adults }} adults</span>
+                @if (room.capacity.children) {
+                  <span>👶 {{ room.capacity.children }} children</span>
+                }
+              </div>
+              <div class="pricing">
+                <span class="price">{{ room.pricePerNight | currency }}/night</span>
+                <span class="select-btn">Select →</span>
+              </div>
+            </div>
+          }
+        </div>
+      }
+    </section>
+  }
+
+  <!-- STEP 3: Confirm & Guest Info -->
+  @if (step() === 'confirm') {
+    <section class="confirm-card card">
+      <div class="card-header">
+        <h3>Complete Your Booking</h3>
+        <button type="button" (click)="goBack()" class="btn btn-secondary">Back</button>
+      </div>
+
+      <div class="booking-summary">
+        <div class="summary-box">
+          <h4>Room Details</h4>
+          <p><strong>Room:</strong> {{ selectedRoom()?.roomNumber }}</p>
+          <p><strong>Type:</strong> {{ selectedRoom()?.type }}</p>
+          <p><strong>Nightly Rate:</strong> {{ selectedRoom()?.pricePerNight | currency }}</p>
+          <p><strong>Nights:</strong> {{ calculateNights() }}</p>
+          <p class="total"><strong>Total (incl. tax):</strong> {{ calculateTotal() | currency }}</p>
+        </div>
+      </div>
+
+      <form [formGroup]="guestForm" (ngSubmit)="completeBooking()" class="guest-form">
+        <h4>Guest Information</h4>
+        <div class="row">
+          <div class="field">
+            <label>First Name</label>
+            <input formControlName="firstName" />
+          </div>
+          <div class="field">
+            <label>Last Name</label>
+            <input formControlName="lastName" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label>Email</label>
+            <input type="email" formControlName="email" />
+          </div>
+          <div class="field">
+            <label>Phone</label>
+            <input formControlName="phone" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field">
+            <label>Date of Birth (optional)</label>
+            <input type="date" formControlName="dateOfBirth" />
+          </div>
+          <div class="field">
+            <label>Nationality (optional)</label>
+            <input formControlName="nationality" />
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="field full">
+            <label>Special Requests (optional)</label>
+            <textarea formControlName="specialRequests" placeholder="Any special needs or preferences?"></textarea>
+          </div>
+        </div>
+
+        <div class="row actions">
+          <button type="submit" class="btn btn-primary" [disabled]="loading()">Confirm Booking</button>
+        </div>
+      </form>
+    </section>
+  }
+
+  <!-- My Bookings (if logged in) -->
+  @if (auth.isLoggedIn() && bookings().length > 0) {
+    <section class="my-bookings card">
+      <h3>My Bookings</h3>
+      <div class="bookings-list">
+        @for (b of bookings(); track b._id) {
+          <div class="booking-item">
+            <div class="booking-info">
+              <p><strong>Reference:</strong> {{ b.bookingReference }}</p>
+              <p><strong>Status:</strong> <span class="status" [class]="'status-' + b.status">{{ b.status }}</span></p>
+              <p><strong>Check-in:</strong> {{ b.checkIn | date: 'short' }} | <strong>Check-out:</strong> {{ b.checkOut | date: 'short' }}</p>
+            </div>
+            <div class="booking-amount">
+              <strong>{{ b.pricing.totalAmount | currency }}</strong>
+            </div>
+          </div>
+        }
+      </div>
+    </section>
+  }
+</div>
+

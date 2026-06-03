@@ -1,0 +1,126 @@
+<div class="rooms-page">
+	<header class="rooms-header">
+		<div>
+			<h2>Rooms</h2>
+			<p class="subtitle">Manage hotel inventory with quick status updates, rich room details, and smooth controls.</p>
+		</div>
+		<div class="actions">
+			<button type="button" (click)="loadRooms()" class="btn btn-secondary">Refresh</button>
+			@if (auth.isAdmin() || auth.isManager()) {
+				<button type="button" (click)="openAdd()" class="btn btn-primary">Add Room</button>
+			}
+		</div>
+	</header>
+
+	<section class="rooms-summary card">
+		<div class="summary-item">
+			<span class="summary-label">Total rooms</span>
+			<strong>{{ rooms().length }}</strong>
+		</div>
+		<div class="summary-item">
+			<span class="summary-label">Managers/Admins can add rooms</span>
+			<strong>Controlled access</strong>
+		</div>
+	</section>
+
+	@if (error()) {
+		<div class="alert alert-error">{{ error() }}</div>
+	}
+
+	@if (showAdd()) {
+		<section class="add-room card">
+			<h3>Add Room</h3>
+			<form [formGroup]="addForm" (ngSubmit)="submitAdd()" class="add-form">
+				<div class="row">
+					<label>Room Number</label>
+					<input formControlName="roomNumber" placeholder="e.g. 101" class="form-control"/>
+				</div>
+				<div class="row">
+					<label>Floor</label>
+					<input type="number" formControlName="floor" class="form-control"/>
+				</div>
+				<div class="row">
+					<label>Type</label>
+					<select formControlName="type" class="form-control">
+						@for (t of types; track t) {
+							<option [value]="t">{{ t }}</option>
+						}
+					</select>
+				</div>
+				<div class="row">
+					<label>Price Per Night</label>
+					<input type="number" formControlName="pricePerNight" class="form-control"/>
+				</div>
+				<div class="row">
+					<label>Adults</label>
+					<input type="number" formControlName="adults" class="form-control"/>
+				</div>
+				<div class="row">
+					<label>Children</label>
+					<input type="number" formControlName="children" class="form-control"/>
+				</div>
+				<div class="row">
+					<label>Amenities (comma separated)</label>
+					<input formControlName="amenities" placeholder="WiFi,TV,Minibar" class="form-control"/>
+				</div>
+				<div class="row">
+					<label>Images (comma separated URLs)</label>
+					<input formControlName="images" placeholder="https://... , https://..." class="form-control"/>
+				</div>
+				<div class="row">
+					<label>Description</label>
+					<textarea formControlName="description" class="form-control"></textarea>
+				</div>
+				<div class="row inline">
+					<label><input type="checkbox" formControlName="isSmokingAllowed"/> Smoking</label>
+					<label><input type="checkbox" formControlName="isPetFriendly"/> Pet Friendly</label>
+					<label><input type="checkbox" formControlName="hasBalcony"/> Balcony</label>
+				</div>
+				<div class="row actions">
+					<button type="submit" class="btn btn-primary">Create room</button>
+					<button type="button" class="btn btn-secondary" (click)="closeAdd()">Cancel</button>
+				</div>
+			</form>
+		</section>
+	}
+
+	@if (loading()) {
+		<div class="loading-state">Loading rooms...</div>
+	} @else {
+		<div class="table-card card">
+			<table class="rooms-table">
+			<thead>
+				<tr>
+					<th>Room</th>
+					<th>Type</th>
+					<th>Price</th>
+					<th>Status</th>
+					<th>Actions</th>
+				</tr>
+			</thead>
+			<tbody>
+				@for (r of rooms() || []; track r._id) {
+					<tr>
+						<td>{{ r.roomNumber }}</td>
+						<td>{{ r.type }}</td>
+						<td>{{ r.pricePerNight | currency }}</td>
+						<td>
+							<select (change)="changeStatus(r._id, $any($event.target).value)">
+								@for (s of statuses; track s) {
+									<option [value]="s" [selected]="s === r.status">{{ s }}</option>
+								}
+							</select>
+						</td>
+						<td>
+							<button type="button" class="btn action-secondary" (click)="changeStatus(r._id, 'available')">Mark Available</button>
+							@if (auth.isAdmin() || auth.isManager()) {
+								<button type="button" class="btn action-danger" (click)="deleteRoom(r._id)">Delete</button>
+							}
+						</td>
+					</tr>
+				}
+			</tbody>
+			</table>
+		</div>
+	}
+</div>

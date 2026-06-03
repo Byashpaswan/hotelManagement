@@ -1,0 +1,300 @@
+2026-06-02 17:52:38 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:36:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-02 17:52:38 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:36:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-02 17:52:58 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:36:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-02 17:52:58 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:36:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-02 18:13:17 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:36:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-02 18:13:17 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:36:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-02 18:13:28 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:36:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-02 18:13:28 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:36:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-02 18:17:48 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:36:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-02 18:17:48 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:36:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-02 18:17:54 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+2026-06-02 18:19:46 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:36:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-02 18:19:46 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:36:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-02 18:19:59 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at param (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:365:14)
+    at param (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:376:14)
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:421:3)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+2026-06-02 18:21:03 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:36:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-02 18:21:03 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:36:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-02 18:21:37 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:36:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-02 18:21:37 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:36:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-02 18:25:32 [[31merror[39m]: [31m422 — Validation failed[39m
+Error: Validation failed
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\index.js:12:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-02 18:25:33 [[31merror[39m]: [31m422 — Validation failed[39m
+Error: Validation failed
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\index.js:12:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-02 18:25:47 [[31merror[39m]: [31m422 — Validation failed[39m
+Error: Validation failed
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\index.js:12:17
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-02 18:26:21 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:36:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-02 18:26:21 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:36:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-03 10:25:24 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:36:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-03 10:25:24 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:36:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-03 10:25:34 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:36:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+2026-06-03 10:25:34 [[31merror[39m]: [31m403 — Role 'receptionist' is not authorized for this action.[39m
+Error: Role 'receptionist' is not authorized for this action.
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:45:11
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:149:13)
+    at Route.dispatch (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\route.js:119:3)
+    at Layer.handle [as handle_request] (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\layer.js:95:5)
+    at C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:284:15
+    at Function.process_params (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:346:12)
+    at next (C:\nodeWorkSpace\hodelm\backend\node_modules\express\lib\router\index.js:280:10)
+    at C:\nodeWorkSpace\hodelm\backend\src\middlware\auth.js:36:3
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)

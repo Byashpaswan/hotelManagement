@@ -1,0 +1,22 @@
+
+<main class="main">
+  <header class="app-header" style="width:100%;display:flex;justify-content:center;padding:10px 0;">
+    <nav style="display:flex;gap:12px;align-items:center;">
+      @if (auth.isLoggedIn()) {
+        <a routerLink="/dashboard" routerLinkActive="active" class="pill">Dashboard</a>
+        <a routerLink="/rooms" routerLinkActive="active" class="pill">Rooms</a>
+        <a routerLink="/guests" routerLinkActive="active" class="pill">Guests</a>
+        <a routerLink="/bookings" routerLinkActive="active" class="pill">Bookings</a>
+        <button type="button" class="btn btn-secondary" (click)="logout()">Logout</button>
+      } @else {
+        <a routerLink="/auth/login" routerLinkActive="active" class="pill">Login</a>
+        <a routerLink="/auth/register" routerLinkActive="active" class="pill">Register</a>
+      }
+    </nav>
+  </header>
+
+</main>
+
+
+
+<router-outlet />
