@@ -3,6 +3,7 @@ const Room = require('../models/Room');
 const Guest = require('../models/Guest');
 const factory = require('../services/factory');
 const { catchAsync, sendResponse, AppError } = require('../utils/appError');
+const publishBookingEvent = require('../producer/bookingProducer');
 
 const POPULATE_OPTIONS = [
   { path: 'guest', select: 'firstName lastName email phone vipStatus' },
@@ -70,7 +71,14 @@ exports.createBooking = catchAsync(async (req, res) => {
   });
 
   await booking.populate(POPULATE_OPTIONS);
+
+   // Push Queue Job
+    await publishBookingEvent({
+      bookingId: booking._id,
+    });
+
   sendResponse(res, 201, booking);
+
 });
 
 /**

@@ -54,7 +54,7 @@ const userSchema = new mongoose.Schema(
     lockUntil: { type: Date, select: false },
     lastLogin: Date,
   },
-  {
+  { 
     timestamps: true,
     toJSON: {
       transform(_, ret) {
